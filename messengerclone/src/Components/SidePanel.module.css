@@ -1,0 +1,7 @@
+.container {
+  display: flex;
+  width: 18.5vw;
+  height: 100vh;
+  max-height: 100%;
+  border-right: lightgrey solid 1px;
+}
