@@ -1,7 +1,18 @@
 .container {
   display: flex;
-  width: 18.5vw;
+  flex-direction: column;
+  width: 360px;
   height: 100vh;
   max-height: 100%;
   border-right: lightgrey solid 1px;
+}
+
+.peopleCont {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.peopleCont:hover {
+  overflow-y: visible;
 }
