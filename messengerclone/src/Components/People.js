@@ -3,9 +3,10 @@ import styles from "./People.module.css";
 import PeopleCard from "./PeopleCard";
 import { Friends } from "./Data";
 
-export default function People() {
+export default function People(props) {
   const renderPeople = Friends.map((e) => (
-    <PeopleCard fname={e.fname} lname={e.lname} message={e.msg}/>
+    // setName and setChat: we must go deeper
+    <PeopleCard fname={e.fname} lname={e.lname} message={e.msg} setName={props.setName} setChat={props.setChat}/>
   ));
   
   return (
