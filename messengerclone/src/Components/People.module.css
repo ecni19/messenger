@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 87vh;
+  width: 18.5vw;
+  align-items: center;
+  /* border: solid black; */
+}
+
+
+/* Change scrollbar styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:lightgrey;
+  border-radius: 10px;
+}
+
