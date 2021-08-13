@@ -1,11 +1,13 @@
 import React from "react";
 import SidePanel from "./Components/SidePanel";
-import './App.css';
+import styles from './App.module.css';
+import Chat from "./Components/Chat";
 
 function App() {
   return (
-    <div>
+    <div className={styles.container}>
       <SidePanel/>
+      <Chat/>
     </div>
   );
 }
