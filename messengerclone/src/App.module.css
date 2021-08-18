@@ -1,3 +1,7 @@
+:root {
+  --main-color: rgba(134, 142, 153, 0.1);
+}
+
 .container {
   display: flex;
 }

@@ -1,0 +1,31 @@
+.cont {
+  display: flex; 
+  height: 40px;
+  padding: 5px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.circle {
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.msg {
+  flex-grow: 100;
+  border-radius: 20px;
+  border: none;
+  padding: 3px 3px 3px 10px;
+  background-color: #f2f2f2;
+  font-size: 11pt;
+  letter-spacing: 0.5px;
+  height: 30px;
+}
+
+.msg:focus {
+  outline: none;
+}

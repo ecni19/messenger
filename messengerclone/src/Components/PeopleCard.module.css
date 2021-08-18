@@ -6,7 +6,6 @@ ul {
   display: flex;
   width: 320px;
   height: 70px;
-  /* border: solid black 1px; */
   padding: 2px;
   border-radius: 10px;
   align-items: center;
@@ -15,7 +14,7 @@ ul {
 
 .container:hover {
   filter: brightness(1);
-  background-color: rgba(134, 142, 153, 0.1);;
+  background-color: var(--main-color);
   cursor: pointer;
 }
 
