@@ -1,10 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { ChatContext } from "../App";
 import styles from "./PeopleCard.module.css";
 
 export default function PeopleCard(props) {
+  const {Chat, Name} = React.useContext(ChatContext);
+  const [chat, setChat] = Chat;
+  const [name, setName] = Name;
   const handleClick = () => {
-    props.setChat(true);
-    props.setName(props.fname + " " + props.lname);
+    setChat(true);
+    setName(props.fname + " " + props.lname);
   }
   
   return (

@@ -1,13 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
+import { ChatContext } from "../App";
 import styles from "./Chat.module.css";
 import Topbar from "./Topbar";
 import MessageBar from "./MessageBar";
 
-export default function Chat(props) {
+export default function Chat() {
+  const {Chat} = React.useContext(ChatContext);
+  const [chat] = Chat;
   return (
     <div className={styles.container}>
-      {props.chat && <Topbar fullname={props.fullname}/>}
-      {props.chat && <MessageBar/>}
+      {chat && <Topbar/>}
+      {chat && <MessageBar/>}
     </div>
   )
 }

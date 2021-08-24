@@ -3,18 +3,22 @@ import SidePanel from "./Components/SidePanel";
 import styles from './App.module.css';
 import Chat from "./Components/Chat";
 
+export const ChatContext = React.createContext();
+
 function App() {
   // tells App.js to render the chat for this person
-  const [chat, setChat] = useState(false);
+  const [chat, setChat] = React.useState(false);
   // provides the name of the person for the chat
-  const [name, setName] = useState("");
+  const [name, setName] = React.useState("");
 
   return (
-    <div className={styles.container}>
-      {/* Pass setName and setChat down to PeopleCard */}
-      <SidePanel setName={setName} setChat={setChat}/>   
-      <Chat fullname={name} chat={chat}/>
-    </div>
+    // provide all components with the chat and name states
+    <ChatContext.Provider value={{ Chat: [chat, setChat], Name: [name, setName] }}>
+      <div className={styles.container}>
+        <SidePanel/>
+        <Chat/>
+      </div>
+    </ChatContext.Provider>
   );
 }
 
