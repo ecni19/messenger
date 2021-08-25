@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./Search.module.css";
 import { BsPencilSquare, BsCameraVideoFill, BsSearch } from "react-icons/bs";
 import { IoEllipsisHorizontal } from "react-icons/io5";
+import { ChatContext } from "../App";
 
 export default function Search() {
+  const { Search } = React.useContext(ChatContext);
+  const [searchName, setSearchName] = Search;
+
   return (
     <div className={styles.container}>
       <div className={styles.topRow}>
@@ -14,8 +18,7 @@ export default function Search() {
         <div className={styles.actions}><BsPencilSquare/></div>
       </div>
       <div className={styles.searchContainer}>
-      <input className={styles.search} placeholder={`Search Messenger`}>
-      </input>
+      <input className={styles.search} placeholder={`Search Messenger`} onInput={e => setSearchName(e.target.value)}/>
       </div>
     </div>
   )

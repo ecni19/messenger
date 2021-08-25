@@ -19,10 +19,9 @@ ul {
 }
 
 .pfp {
-  min-width: 55px;
-  min-height: 55px;
+  min-width: 60px;
+  min-height: 60px;
   border-radius: 50%;
-  background-color: black;
 }
 
 .name {

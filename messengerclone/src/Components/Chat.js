@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import { ChatContext } from "../App";
 import styles from "./Chat.module.css";
 import Topbar from "./Topbar";
