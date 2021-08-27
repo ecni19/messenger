@@ -1,0 +1,10 @@
+.message {
+  background-color: var(--main-color);
+  color: black;
+  padding: 8px;
+  border-radius: 20px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  /* override the Conversation container's align-items property */
+  align-self: flex-end;
+}
