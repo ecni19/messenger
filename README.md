@@ -8,7 +8,7 @@ Example of a conversation:
 ![image](https://user-images.githubusercontent.com/47995084/131173150-8e77885a-a3ed-4863-b537-fbd44768b326.png)
 Ternary operators determine when to display the profile picture of the friend
 
-Search function will filter through the friend's list using ES6 array functions:
+Search function will filter through the friend list using ES6 array functions:
 <p align="center">
   <img src="https://user-images.githubusercontent.com/47995084/131173289-eeaf045e-80e7-4a74-aa09-f32ffa3631bd.png">
 </p>
