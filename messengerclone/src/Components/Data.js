@@ -92,6 +92,7 @@ function populateArray(e) {
 
 Friends.map((e) => {
   populateArray(e);
+  return [];
 })
 
 export default {

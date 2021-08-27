@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ChatContext } from "../App";
 import styles from "./Topbar.module.css";
 import { IoPersonCircle } from "react-icons/io5";
@@ -9,17 +9,18 @@ import { IoEllipsisHorizontal } from "react-icons/io5";
 export default function Topbar() {
   const {Name} = useContext(ChatContext);
   const [name] = Name;
+  const [time, setTime] = useState(1);
 
-  const getActiveTime = () => {
-    return Math.floor(Math.random() * (59 - 1) + 1);
-  }
+  useEffect(() => {
+    setTime(Math.floor(Math.random() * (59 - 1) + 1))
+  }, [name])
 
   return (
     <div className={styles.container}>
       <IoPersonCircle className={styles.pfp} />
       <ul>
         <div className={styles.name}>{name}</div>
-        <div className={styles.active}>{`Active ${getActiveTime()}m ago`}</div>
+        <div className={styles.active}>{`Active ${time}m ago`}</div>
       </ul>
       <div className={styles.actionCont}>
         <div className={styles.actions}>

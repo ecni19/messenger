@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React from "react";
 import { ChatContext } from "../App";
 import { IoPersonCircle } from "react-icons/io5";
 import styles from "./PeopleCard.module.css";

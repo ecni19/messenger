@@ -13,7 +13,7 @@ export default function Conversation() {
   useEffect(() => {
     let convo = document.getElementById(styles.container);
     convo.scrollTop = convo.scrollHeight;
-  }, [messages])
+  }, [name])
 
   for(let i = 0; i < Friends.length; i++) {
     if(Friends[i].fname + " " + Friends[i].lname === name) {

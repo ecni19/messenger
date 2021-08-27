@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import styles from "./Search.module.css";
-import { BsPencilSquare, BsCameraVideoFill, BsSearch } from "react-icons/bs";
+import { BsPencilSquare, BsCameraVideoFill } from "react-icons/bs";
 import { IoEllipsisHorizontal } from "react-icons/io5";
 import { ChatContext } from "../App";
 

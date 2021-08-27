@@ -9,7 +9,7 @@ export default function People() {
   const [searchName] = Search;
 
   const renderPeople = Friends.filter((e) => {
-    if(searchName == "") {
+    if(searchName === "") {
       return e;
     } else if((e.fname.toLowerCase() + " " + e.lname.toLowerCase()).includes(searchName.toLowerCase())) {
       return e
