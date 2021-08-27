@@ -12,6 +12,7 @@ ul {
 }
 
 .pfp {
+  color: lightgray;
   min-width: 40px;
   min-height: 40px;
   margin-left: 20px;
