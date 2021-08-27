@@ -10,7 +10,7 @@ Ternary operators determine when to display the profile picture of the friend
 
 Search function will filter through the friend's list using ES6 array functions:
 <p align="center">
-  <img width="460" height="300" src="https://user-images.githubusercontent.com/47995084/131173289-eeaf045e-80e7-4a74-aa09-f32ffa3631bd.png">
+  <img src="https://user-images.githubusercontent.com/47995084/131173289-eeaf045e-80e7-4a74-aa09-f32ffa3631bd.png">
 </p>
 
 What's next?
