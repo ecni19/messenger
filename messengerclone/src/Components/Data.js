@@ -89,9 +89,14 @@ function populateArray(e) {
   let str = `msg${e.id}`;
   e[str] = messages;
 }
-
+function giveTime(e) {
+  let time = Math.floor(Math.random() * (59 - 1) + 1)
+  let str = `time${e.id}`;
+  e[str] = time;
+}
 Friends.map((e) => {
   populateArray(e);
+  giveTime(e)
   return [];
 })
 

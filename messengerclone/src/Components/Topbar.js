@@ -1,4 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
+import { Friends } from "./Data";
 import { ChatContext } from "../App";
 import styles from "./Topbar.module.css";
 import { IoPersonCircle } from "react-icons/io5";
@@ -9,11 +10,19 @@ import { IoEllipsisHorizontal } from "react-icons/io5";
 export default function Topbar() {
   const {Name} = useContext(ChatContext);
   const [name] = Name;
-  const [time, setTime] = useState(1);
+  const [time, setTime] = useState(0);
 
   useEffect(() => {
-    setTime(Math.floor(Math.random() * (59 - 1) + 1))
-  }, [name])
+    for (let i = 0; i < Friends.length; i++) {
+      if (Friends[i].fname + " " + Friends[i].lname === name) {
+        // Find the id of the friend's conversation
+        let timeId = `time${Friends[i].id}`;
+        // assign the array of messages
+        setTime(Friends[i][timeId]);
+        break;
+      }
+    }
+  }, [name]);
 
   return (
     <div className={styles.container}>

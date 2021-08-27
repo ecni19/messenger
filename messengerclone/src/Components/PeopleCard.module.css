@@ -21,6 +21,7 @@ ul {
 .pfp {
   min-width: 60px;
   min-height: 60px;
+  color: lightgray;
   border-radius: 50%;
 }
 

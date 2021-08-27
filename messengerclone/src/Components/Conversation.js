@@ -5,6 +5,7 @@ import { Friends } from "./Data";
 import MyMessage from "./MyMessage";
 import TheirMessage from "./TheirMessage";
 
+
 export default function Conversation() {
   const {Name} = useContext(ChatContext);
   const [name] = Name;
@@ -25,16 +26,22 @@ export default function Conversation() {
     }
   }
   return (
-      <div id={styles.container}>
-        {/* Map the array of messages, render sentence depending on the id */}
-        {/* id:0 is "you", id:1 is the friend */}
-        {messages.map((element) =>
-          element.id === 0 ? (
-            <MyMessage msg={element.msg} id={element.id} />
+    <div id={styles.container}>
+      {/* Map the array of messages, render sentence depending on the id */}
+      {/* id:0 is "you", any other id is the friend */}
+      {messages.map((element, ind) =>
+        element.id === 0 ? ( // check who sent the message
+          <MyMessage msg={element.msg} id={element.id} />
+        ) : ind + 1 < messages.length ? ( // make sure we're in bounds of the array
+          messages[ind + 1].id === 0 ? ( // first check if we are at the last message or not
+            <TheirMessage displayPfp={true} msg={element.msg} id={element.id} /> // if the next message is from "you", display the pfp of the friend
           ) : (
-            <TheirMessage msg={element.msg} id={element.id} />
+            <TheirMessage displayPfp={false} msg={element.msg} id={element.id} /> // else, don't display it
           )
-        )}
-      </div>
+        ) : (
+          <TheirMessage displayPfp={true} msg={element.msg} id={element.id} /> // if we are at the last message and it is from "you", display pfp
+        )
+      )}
+    </div>
   );
 }

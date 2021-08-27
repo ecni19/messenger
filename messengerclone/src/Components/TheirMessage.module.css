@@ -6,5 +6,17 @@
   margin-bottom: 1px;
   /* override the Conversation container's align-items property */
   align-self: flex-start;
+  float: left;
   color: white;
 }
+
+.pfp {
+  position: relative;
+  color: lightgray;
+  float: left;
+  left: 20px;
+  top: 7px;
+  margin-left: -50px;
+  font-size: 20pt;
+}
+

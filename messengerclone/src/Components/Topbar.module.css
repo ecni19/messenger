@@ -48,6 +48,8 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+  font-size: 20pt;
+  color: blue;
   /* border: black solid; */
 }
 

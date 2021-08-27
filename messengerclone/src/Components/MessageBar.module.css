@@ -3,16 +3,21 @@
   height: 40px;
   padding: 5px;
   align-items: center;
-  margin-top: auto;
 }
 
 .circle {
-  float: left;
-  width: 10px;
-  height: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  width: 23px;
+  height: 23px;
+  font-size: 15pt;
   margin: 5px;
   border-radius: 50%;
-  background-color: black;
+}
+.circle:hover {
+  cursor: pointer;
 }
 
 .msg {
