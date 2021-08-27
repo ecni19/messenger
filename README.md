@@ -16,3 +16,4 @@ Search function will filter through the friend list using ES6 array functions:
 What's next?
 * I would like to turn this into a fullstack app that has real time storage for conversations.
 * Going further, I would also like to implement a login/authentication system, possibly utilizing Facebook's API as well.
+* Add support for group chats
