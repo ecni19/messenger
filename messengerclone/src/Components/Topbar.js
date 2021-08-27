@@ -9,12 +9,17 @@ import { IoEllipsisHorizontal } from "react-icons/io5";
 export default function Topbar() {
   const {Name} = useContext(ChatContext);
   const [name] = Name;
+
+  const getActiveTime = () => {
+    return Math.floor(Math.random() * (59 - 1) + 1);
+  }
+
   return (
     <div className={styles.container}>
       <IoPersonCircle className={styles.pfp} />
       <ul>
         <div className={styles.name}>{name}</div>
-        <div className={styles.active}>Active 5m ago</div>
+        <div className={styles.active}>{`Active ${getActiveTime()}m ago`}</div>
       </ul>
       <div className={styles.actionCont}>
         <div className={styles.actions}>

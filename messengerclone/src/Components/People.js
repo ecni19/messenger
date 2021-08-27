@@ -15,7 +15,7 @@ export default function People() {
       return e
     }
   }).map((e, ind) => (
-    <PeopleCard fname={e.fname} lname={e.lname} message={e.msg} key={ind}/>
+    <PeopleCard fname={e.fname} lname={e.lname} key={ind}/>
   ));
 
   return (
