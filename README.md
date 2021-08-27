@@ -6,7 +6,7 @@ On load:
 
 Example of a conversation:
 ![image](https://user-images.githubusercontent.com/47995084/131173150-8e77885a-a3ed-4863-b537-fbd44768b326.png)
-Ternary operators determine when to display the profile picture of the friend
+Ternary operators determine when to display the profile picture of the friend by their message
 
 Search function will filter through the friend list using ES6 array functions:
 <p align="center">
