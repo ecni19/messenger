@@ -10,6 +10,6 @@ Example of a conversation:
 Search function will filter through the friend's list:
 ![image](https://user-images.githubusercontent.com/47995084/131061278-4a7d6319-59da-426d-ad8f-aaef5b940037.png)
 
-#What's next?
+What's next?
 * I would like to turn this into a fullstack app that has real time storage for conversations.
 * Going further, I would also like to implement a login/authentication system, possibly utilizing Facebook's API as well.
