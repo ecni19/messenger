@@ -1,5 +1,5 @@
 # Facebook Messenger Frontend Clone
-I made this FB messenger clone to help improve my React.js and CSS skills. The messages for each conversation were generated with Faker.js, and the icons are from React Icons. Best enjoyed on a computer. React's useContext hook was used for simple state management.
+I made this FB messenger clone to help improve my React.js and CSS skills; no external CSS libraries were used in this project. The messages for each conversation were generated with Faker.js, and the icons are from React Icons. Best enjoyed on a computer. React's useContext hook was used for simple state management.
 
 On load:
 ![image](https://user-images.githubusercontent.com/47995084/131060836-ff9a925c-fcbc-467d-9d46-813901c16e24.png)
