@@ -5,11 +5,11 @@ On load:
 ![image](https://user-images.githubusercontent.com/47995084/131172619-49b33a0f-fea4-439c-b4fa-0ad1b25f63fe.png)
 
 Example of a conversation:
-![image](https://user-images.githubusercontent.com/47995084/131172652-f017cfc0-0153-40d8-8246-a4630fa83f54.png)
+![image](https://user-images.githubusercontent.com/47995084/131173028-2767dda0-9f1f-4c1c-8f9b-8028fc54d4ca.png)
 Ternary operators determine when to display the profile picture of the friend
 
 Search function will filter through the friend's list using ES6 array functions:
-![image](https://user-images.githubusercontent.com/47995084/131172719-ed74f6c1-81a9-42cf-af61-35d0134b0a1d.png)
+![image](https://user-images.githubusercontent.com/47995084/131173068-d177b495-c620-42c7-897c-e5e1f6212c0e.png)
 
 What's next?
 * I would like to turn this into a fullstack app that has real time storage for conversations.
